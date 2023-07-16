@@ -1,3 +1,4 @@
+@@ -1,126 +0,0 @@
 # For most projects, this workflow file will not need changing; you simply need
 # to commit it to your repository.
 #
@@ -28,7 +29,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ csharp ]
+        language: [ java ]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
@@ -118,7 +119,7 @@ jobs:
       prefix: "pip prod"
       prefix-development: "pip dev"
       include: "scope"
-      
+
     - package-ecosystem: "gomod"
       vendor: true
       directory: "/"
